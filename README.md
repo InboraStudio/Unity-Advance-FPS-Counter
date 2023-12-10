@@ -295,11 +295,11 @@ custom UI for the counters - you may use any non-standard UI framework, output t
 
   - While Unity didn’t introduce better way to save values set at runtime, you may easily tune counters (colors, intervals,
      etc.) in Play mode and save adjusted values using these steps:
-        - enter Play mode
-        - tune AFPSCounter component settings in inspector
-        - right-click on the AFPSCounter component’s header and select "Copy Component"
-        - exit Play mode
-        - right-click on the AFPSCounter component’s header and select "Paste Component Values"
+          - enter Play mode
+          - tune AFPSCounter component settings in inspector
+          - right-click on the AFPSCounter component’s header and select "Copy Component"
+          - exit Play mode
+          - right-click on the AFPSCounter component’s header and select "Paste Component Values"
 
 This technique works for any other components as well.
   - To enable and disable whole AFPSCounter from code just use AFPSCounter.Instance.OperationMode property (switch
