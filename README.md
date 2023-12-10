@@ -188,6 +188,14 @@ three FPS value ranges: normal, warning and critical
 - Average FPS: shows an averaged FPS using accumulates samples.
     Notable sub-settings are:
 
+   - Samples: controls how much of last FPS readouts to use for average
+     calculation. More samples - more slow and smooth average value
+     change. Use 0 value to collect all FPS samples since last Average FPS
+     reset (optimized calculation will be used in such case).
+
+   - Auto Reset: resets this FPS metric and cleans accumulated samples on
+     scene load.
+
 
 
 
