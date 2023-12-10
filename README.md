@@ -140,6 +140,35 @@ placed on the nested Game Object.
    With higher value Canvas gets closer to the user while sorting with
    other canvases.
 
+------------------------------------------------------------------------ 
+
+# Counters settings
+
+# Common per-counter settings
+
+All counters have same per-counter settings:
+
+- Interval: delay between counter updates, in seconds. Recommended
+     value lays in 0.5 - 1 secs range. Only updatable counters have this
+     setting.
+
+- Anchor: specifies counter screen placement within one of these Labels:
+     Upper Left, Upper Center, Upper Right
+     Lower Left, Lower Center, Lower Right
+     It allows covering all corners, top and bottom of the screen.
+     All counters with same anchor are drawn within one Label, thus, one
+     Label may contain several Counters. Labels content is refreshed (and
+     reassembled) only if any containing Counter is marked as dirty (has
+     changed value since last update). It allows avoiding unnecessary waste
+     of resources.
+
+- Color: counter text color. FPS Counter has more complex text coloration
+     with three coloration ranges - for normal, warning and critical value.
+
+- Style: counter text style with these values:
+     Normal, Bold, Italic, Bold and Italic
+
+ Note: Not all fonts support these styles.
 
 ------------------------------------------------------------------------
 
