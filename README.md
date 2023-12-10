@@ -172,5 +172,42 @@ All counters have same per-counter settings:
 
 ------------------------------------------------------------------------
 
+# FPS (Frames Per Second) Counter
 
-# Counters settings
+Here are all Counter settings in same order as you see them in Inspector:
+
+Common settings section, with more flexible Color Range selection for
+three FPS value ranges: normal, warning and critical
+
+- Realtime FPS: shows actual FPS. In some cases, you might want to see
+   only Average FPS for example, so you can disable realtime FPS here.
+
+   - Milliseconds: shows an approximate time spent to process one frame.
+     Available for all FPS metrics.
+
+- Average FPS: shows an averaged FPS using accumulates samples.
+    Notable sub-settings are:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
