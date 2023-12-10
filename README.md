@@ -31,8 +31,8 @@ Hint:
 
 ``` bash
 // place this line right at the beginning of your .cs file!
-
 using CodeStage.AdvancedFPSCounter;
+
 // ...
 private void Start()
 {
