@@ -21,14 +21,17 @@ IMPORTANT:
   Project Browser:
 
 
-"Add Component" button > Code Stage > Advanced FPS Counter
+  "Add Component" button > Code Stage > Advanced FPS Counter
 
 - Add to scene from code using AFPSCounter.AddToScene() API
 
 Hint:
 - You need to add namespace CodeStage.AdvancedFPSCounter to usings in order to work with plugin from code.
   Here is a simple example:
+
+``` bash
 // place this line right at the beginning of your .cs file!
+``` 
 using CodeStage.AdvancedFPSCounter;
 // ...
 private void Start()
