@@ -29,7 +29,7 @@ Hint:
 - You need to add namespace CodeStage.AdvancedFPSCounter to usings in order to work with plugin from code.
   Here is a simple example:
 
-``` bash
+``` cpp
 // place this line right at the beginning of your .cs file!
 using CodeStage.AdvancedFPSCounter;
 
