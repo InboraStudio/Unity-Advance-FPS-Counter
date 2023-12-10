@@ -4,4 +4,11 @@ This is a advanced unity express counter that work with every unity supported ve
 
 
 # Installation and setup
-##IMPORTANT:
+IMPORTANT:
+To avoid different compatibility issues and errors, always remove previous version from project Assets before updating.
+As you import plugin, you have such options for adding Advanced FPS Counter to your scenes:
+• Drag Inbora Studio/AdvancedFPSCounter/Prefabs/Advanced FPS Counter prefab to the Scene Hierarchy.
+Hint:
+You also may find prefabs from the Examples/Prefabs folder useful for the VR or World Space setup.
+• Add from the Scene Hierarchy context menu (or Game Object menu):
+
