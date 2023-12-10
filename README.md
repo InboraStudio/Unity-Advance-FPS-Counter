@@ -130,3 +130,12 @@ placed on the nested Game Object.
 - Shadow & Outline: text rendering effects with customizable Color and
     Distance. These are resources-heavy (especially outline) so use with
     caution on mobile devices.
+
+------------------------------------------------------------------------
+
+
+# Advanced settings
+
+- Sorting Order: controls Canvas’s sortingOrder property.
+   With higher value Canvas gets closer to the user while sorting with
+   other canvases.
