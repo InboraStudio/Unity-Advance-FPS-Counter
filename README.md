@@ -285,7 +285,7 @@ updates only once on start.
 
 ------------------------------------------------------------------------
 
-#Tips
+# Tips
 
 All plugin features and counters values are available from code through the public APIs. It allows to make a totally
 custom UI for the counters - you may use any non-standard UI framework, output to charts and graphs, etc.
