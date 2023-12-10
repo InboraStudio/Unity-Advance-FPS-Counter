@@ -56,3 +56,34 @@ parent. This is useful when you wish to use plugin in some special environment, 
 
 
 Please refer to the Troubleshooting section below if you do not see the counters after performing initial setup.
+
+
+------------------------------------------------------------------------
+
+
+## Plugin features in-dept
+
+
+*Operation Mode: controls how AFPSCounters runs.
+- Disabled mode is used to remove all counters and stop all internal
+  processes except the global hotkey / gesture listener.
+- Normal mode should be used in most cases: counters are visible and
+  operate as intended.
+- Background mode allows reading all enabled counters data using
+  Scripting API without uGUI output thus avoiding any additional
+*resources usage. Useful for performance / hardware stats, for hidden
+performance monitoring and quality settings suggestion, etc.
+Hot Key: customizable global hotkey to show / hide plugin using
+Disabled / Normal Operation Mode switch. Does not affect Background
+Operation Mode.
+Circle Gesture: complements Hot Key and does same job.
+Touch screen / touchpad or hold left mouse button and make ~2
+circles in any direction to switch Operation Mode.
+Keep Alive: allows keeping Advanced FPS Counter’s Game Object on new
+scene load (using DontDestroyOnLoad).
+IMPORTANT:
+The topmost root Game Object will be kept alive if AFPSCounter is
+placed on the nested Game Object.
+Force FPS: allows trying your game at specified frame rate, may help to
+debug your game behavior / physics on slow devices; specified frame
+rate is not guaranteed though (and may not work at all).
