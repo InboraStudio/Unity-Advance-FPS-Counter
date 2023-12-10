@@ -204,7 +204,16 @@ three FPS value ranges: normal, warning and critical
 
    - Auto Reset: resets this FPS metric on scene load.
 
+- Render Time: shows approximate time spent by Camera(s) to render last
+     frame. Requires usage of the helper AFPSRenderRecorder component.
+     Add it to Game Objects with Camera(s) you wish to measure render
+     time for, or use the Auto add option to let AFPSCounter automatically
+     add AFPSRenderRecorder component to the Game Object with "Main
+     Camera" tagged Camera if your scene has it.
+     Helper component will be re-added to the Main Camera’s Game Object
+     after scenes switch if Keep Alive option is used (see below).
 
+Note: does not take into account Image Effects and IMGUI.
 
 
 
