@@ -215,7 +215,40 @@ three FPS value ranges: normal, warning and critical
 
 Note: does not take into account Image Effects and IMGUI.
 
+------------------------------------------------------------------------
 
+# Memory Counter
+
+Here are all Counter settings in same order as you see them in Inspector:
+Common settings section.
+
+- Precise: allows to output memory values with additional accuracy using
+     float values instead of int ones. Requires some extra resources though,
+     thus try to avoid using it in conjunction with low update interval.
+
+- Total: shows total private memory amount, reserved by OS for the
+     application. Other applications cannot use this memory.
+     Applications may ask OS to reserve some amount of private memory,
+     which is usually a bit more than they really use at that moment. This
+     allows making new allocations faster if reserved memory chunk has
+     enough space for them.
+
+- Allocated: shows amount of private memory currently actually used by
+     application. In other words - how much memory all your textures,
+     sounds, etc. use.
+
+- Mono: shows amount of memory, allocated by the managed objects, such
+     as UnityEngine.Object (and everything derived from it), your classes,
+     etc. This memory is called managed because the lifecycle of objects is
+     managed by the runtime - it automatically allocates and frees memory
+     for the objects. Garbage Collector frees memory allocated by
+     unreferenced objects automatically so you do not need to manage
+     them yourself. IL2CPP builds have managed objects and Garbage
+     Collector as well.
+
+- GfxDriver: shows amount of the allocated memory for the graphics driver.
+     This feature requires Unity 2018 or newer and works in Development
+     builds or Editor only.
 
 
 
