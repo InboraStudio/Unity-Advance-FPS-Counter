@@ -48,7 +48,11 @@ private void Start()
 AFPSCounter draws all its data using Labels, which are the uGUI Texts placed within the automatically generated Canvas
 with Screen Space - Overlay mode.
 Thus, in order to see the counters, you do not need to perform any additional actions in most cases.
+
+
 IMPORTANT:
 If you will place AFPSCounter somewhere inside the existing Canvas, auto-generated one will inherit options from the
 parent. This is useful when you wish to use plugin in some special environment, such as a World Canvas in the VR project.
+
+
 Please refer to the Troubleshooting section below if you do not see the counters after performing initial setup.
