@@ -326,6 +326,30 @@ Please report if plugin does not work for you on some specific platform.
 
 All features should work fine with any stripping level, IL2CPP runtime, .NET 4.6 compiler and Assembly Definitions.
 
+# Troubleshooting
+
+------------------------------------------------------------------------
+
+- I cannot see AFPSCounter on the screen
+
+  - Make sure you have added it to the current scene (either in Editor or from code).
+  - Make sure it is enabled and active.
+  - Check console for any error messages or warnings.
+  - Make sure your Canvas Sorting Order has value lower than AFPSCounter’s Sorting Order advanced setting value.
+  - If you are working with VR, place AFPSCounter inside an existing Canvas with World Space Render Mode to make it
+
+visible in your VR device (see Examples/Prefabs/VR Example).
+
+- Something is wrong with the font I use for the counters
+   - Unity had a bug, which led to the exclusion of the font styles in case you are using different font files for the
+
+different styles. Please try updating your Unity version to check if it fixes this issue for you.
+
+- I see GC allocations from AFPSCounter
+- Relatively low amount of GC allocations is expected in the Normal operation mode as it uses UGUI Text which do
+
+not allow to use char[] instead of string to prevent GC allocations. You may use Background operation mode (which
+does not produce GC allocations while running) to make your own GC-free visualization.
 
 
 
