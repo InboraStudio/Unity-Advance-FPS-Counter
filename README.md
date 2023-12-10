@@ -65,12 +65,15 @@ Please refer to the Troubleshooting section below if you do not see the counters
 
 
 *Operation Mode: controls how AFPSCounters runs.
-- Disabled mode is used to remove all counters and stop all internal
-  processes except the global hotkey / gesture listener.
-- Normal mode should be used in most cases: counters are visible and
-  operate as intended.
-- Background mode allows reading all enabled counters data using
-  Scripting API without uGUI output thus avoiding any additional
+  - Disabled mode is used to remove all counters and stop all internal
+    processes except the global hotkey / gesture listener.
+  
+  - Normal mode should be used in most cases: counters are visible and
+    operate as intended.
+  
+  - Background mode allows reading all enabled counters data using
+    Scripting API without uGUI output thus avoiding any additional
+
 *resources usage. Useful for performance / hardware stats, for hidden
 performance monitoring and quality settings suggestion, etc.
 Hot Key: customizable global hotkey to show / hide plugin using
