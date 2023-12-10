@@ -139,3 +139,9 @@ placed on the nested Game Object.
 - Sorting Order: controls Canvas’s sortingOrder property.
    With higher value Canvas gets closer to the user while sorting with
    other canvases.
+
+
+------------------------------------------------------------------------
+
+
+## Counters settings
