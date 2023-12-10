@@ -36,11 +36,12 @@ using CodeStage.AdvancedFPSCounter;
 // ...
 private void Start()
 {
-// instantiates AFPSCounter in scene if it not exists
-// with disabled keepAlive option
-AFPSCounter.AddToScene(false);
-// changes spacing between counters
-AFPSCounter.Instance.CountersSpacing = 1;
+  // instantiates AFPSCounter in scene if it not exists
+  // with disabled keepAlive option
+  AFPSCounter.AddToScene(false);
+
+  // changes spacing between counters
+  AFPSCounter.Instance.CountersSpacing = 1;
 }
 ```
 
