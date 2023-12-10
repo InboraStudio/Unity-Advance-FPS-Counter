@@ -64,7 +64,7 @@ Please refer to the Troubleshooting section below if you do not see the counters
 ## Plugin features in-dept
 
 
-*Operation Mode: controls how AFPSCounters runs.
+#Operation Mode: controls how AFPSCounters runs.
   - Disabled mode is used to remove all counters and stop all internal
     processes except the global hotkey / gesture listener.
   
@@ -74,9 +74,10 @@ Please refer to the Troubleshooting section below if you do not see the counters
   - Background mode allows reading all enabled counters data using
     Scripting API without uGUI output thus avoiding any additional
 
-*resources usage. Useful for performance / hardware stats, for hidden
+#resources usage. Useful for performance / hardware stats, for hidden
 performance monitoring and quality settings suggestion, etc.
-Hot Key: customizable global hotkey to show / hide plugin using
+
+   Hot Key: customizable global hotkey to show / hide plugin using
 Disabled / Normal Operation Mode switch. Does not affect Background
 Operation Mode.
 Circle Gesture: complements Hot Key and does same job.
