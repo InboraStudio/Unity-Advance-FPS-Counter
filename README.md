@@ -250,9 +250,65 @@ Common settings section.
      This feature requires Unity 2018 or newer and works in Development
      builds or Editor only.
 
+------------------------------------------------------------------------
 
+# Device Information Counter
 
+This Counter shows different information about current device and
+environment where your app or game is running.
 
+Here are all Counter settings in same order as you see them in Inspector:
+
+Common settings section without interval setting since this counter
+updates only once on start.
+
+- Platform: outputs Operating System name with version (if possible) and
+    runtime platform type.
+
+- CPU: outputs CPU model and cores count (including virtual cores from
+    Intel’s Hyper Threading).
+
+- GPU Model: outputs GPU model name.
+
+- GPU API: outputs graphics API name, version and type (if possible).
+
+- GPU Spec: outputs graphics shader model (if possible) and total VRAM (if
+    possible).
+
+- RAM: outputs total RAM on current device in Megs.
+
+- Screen: outputs resolution with refresh rate, current window size and
+    screen DPI (if possible).
+
+- Model: outputs device model (if possible). Mostly handy on the mobile
+    devices.
+
+------------------------------------------------------------------------
+
+#Tips
+
+All plugin features and counters values are available from code through the public APIs. It allows to make a totally
+custom UI for the counters - you may use any non-standard UI framework, output to charts and graphs, etc.
+  
+  - Please, take a look at the ExampleScene (at the Examples folder) to see how to work with plugin from code and check
+     how you can alter AFPSCounter’s settings and setup at runtime.
+
+  - While Unity didn’t introduce better way to save values set at runtime, you may easily tune counters (colors, intervals,
+     etc.) in Play mode and save adjusted values using these steps:
+        - enter Play mode
+        - tune AFPSCounter component settings in inspector
+        - right-click on the AFPSCounter component’s header and select "Copy Component"
+        - exit Play mode
+        - right-click on the AFPSCounter component’s header and select "Paste Component Values"
+
+This technique works for any other components as well.
+  - To enable and disable whole AFPSCounter from code just use AFPSCounter.Instance.OperationMode property (switch
+
+it between AFPSCounterOperationMode.Disabled and AFPSCounterOperationMode.Normal).
+  - You may add any text to any counter using ExtraText API. For example:
+
+AFPSCounter.Instance.fpsCounter.ExtraText = "<b>Temp:</b> <color=#A76ED1>40</color>";
+Counter will be immediately updated after calling this API. To remove text, just pass null. Rich Text is supported.
 
 
 
