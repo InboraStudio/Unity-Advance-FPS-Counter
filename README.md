@@ -196,8 +196,13 @@ three FPS value ranges: normal, warning and critical
    - Auto Reset: resets this FPS metric and cleans accumulated samples on
      scene load.
 
+- MinMax FPS: shows minimum and maximum FPS.
+    Notable sub-settings are:
 
+   - Delay: "pre-warm" amount of Interval updates to wait before starting  
+     Min /Max registration. Allows skipping initialization FPS spikes.
 
+   - Auto Reset: resets this FPS metric on scene load.
 
 
 
