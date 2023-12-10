@@ -96,3 +96,38 @@ placed on the nested Game Object.
   - Force FPS: allows trying your game at specified frame rate, may help to
     debug your game behavior / physics on slow devices; specified frame
     rate is not guaranteed though (and may not work at all).
+
+------------------------------------------------------------------------
+
+##Look & Feel settings
+
+------------------------------------------------------------------------
+
+- Auto Scale: controls Canvas’s CanvasScaler uiScaleMode.
+    When disabled, uses ConstantPixelSize with specified Scale Factor.  
+    When enabled, uses ScaleWithScreen.
+
+- Labels Font: font used to render counters in Labels (uGUI Texts).
+    Monospace font with Bold style support usually looks great.
+
+- Font Size: controls size of the used Font.
+
+- Line Spacing: controls space between lines in single Label using uGUI Text
+    LineSpacing.
+
+- Counters Spacing: empty lines count between different counters in same
+    Label.
+
+- Padding Offset: offset for the Labels placement. Relative to the Anchor
+    position set at the per-counter settings and automatically changes sign
+    for the right and bottom Labels.
+
+- Pixel Perfect: controls own Canvas PixelPerfect property in overlay
+    modes.
+
+- Background: colored background effect with customizable Color and
+    Padding. Costs only 1 Draw Call. Fair deal for better visibility.
+
+- Shadow & Outline: text rendering effects with customizable Color and
+    Distance. These are resources-heavy (especially outline) so use with
+    caution on mobile devices.
