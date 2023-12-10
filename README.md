@@ -101,7 +101,6 @@ placed on the nested Game Object.
 
 # Look & Feel settings
 
-------------------------------------------------------------------------
 
 - Auto Scale: controls Canvas’s CanvasScaler uiScaleMode.
     When disabled, uses ConstantPixelSize with specified Scale Factor.  
