@@ -310,6 +310,22 @@ it between AFPSCounterOperationMode.Disabled and AFPSCounterOperationMode.Normal
 AFPSCounter.Instance.fpsCounter.ExtraText = "<b>Temp:</b> <color=#A76ED1>40</color>";
 Counter will be immediately updated after calling this API. To remove text, just pass null. Rich Text is supported.
 
+------------------------------------------------------------------------
+
+# Compatibility
+
+Plugin should work fine on any platform, including WebGL and VR and it was tested on these platforms:
+    
+   PC (Win, Mac, Linux, WebGL), iOS (incl. Google Cardboard), Android (incl. Gear VR, Google Cardboard, Vive Focus),
+   Windows Universal Platform.
+
+In addition, customers reported it as working on these:
+   Wii U devkit (thx Black Lodge Games), Xbox One (thx Yaroslav Bakhvalov).
+
+Please report if plugin does not work for you on some specific platform.
+
+All features should work fine with any stripping level, IL2CPP runtime, .NET 4.6 compiler and Assembly Definitions.
+
 
 
 
