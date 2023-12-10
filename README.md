@@ -144,4 +144,4 @@ placed on the nested Game Object.
 ------------------------------------------------------------------------
 
 
-## Counters settings
+# Counters settings
